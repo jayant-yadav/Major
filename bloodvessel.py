@@ -2,7 +2,9 @@ import cv2
 import numpy as np
 
 
-img = cv2.imread('image002.jpg',1)
+res = cv2.imread('17_right.jpeg',1)
+img = cv2.resize(res,None,fx=0.25, fy=0.25, interpolation = cv2.INTER_CUBIC)
+
 cv2.imshow('initial',img)
 
 #cv2.imshow('image',img)
