@@ -30,6 +30,7 @@ closing2 = cv2.morphologyEx(g, cv2.MORPH_CLOSE, kernel2)
 gradient_image=closing1-closing2
 cv2.imshow('gradient_image',gradient_image)
 blur = cv2.GaussianBlur(gradient_image,(5,5),0)
+#cv2.imshow('blur',blur)
 ret3,gradient_image_th = cv2.threshold(blur,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 cv2.imshow('image',gradient_image_th)
 #res = cv2.bitwise_and(gradient_image_th,gradient_image_th, mask= gradient_image)
