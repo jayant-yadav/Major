@@ -1,3 +1,4 @@
+# optic disk
 import cv2
 import numpy as np
 
@@ -10,6 +11,7 @@ hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
 
 gray=cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.imshow('grayscale',gray)
 #green = img[0,:,0]
 #cv2.imshow('gray',green)
 h,s,v=cv2.split(hsv)

@@ -1,3 +1,4 @@
+# blood vessels
 import cv2
 import numpy as np
 
@@ -24,7 +25,7 @@ b,g,r=cv2.split(img)
 cv2.imshow('green',g)
 closing1 = cv2.morphologyEx(g, cv2.MORPH_CLOSE, kernel1)
 closing2 = cv2.morphologyEx(g, cv2.MORPH_CLOSE, kernel2)
-
+#cv2.imshow('closing1',closing1)
 # plot all the images and their histograms
 gradient_image=closing1-closing2
 cv2.imshow('gradient_image',gradient_image)
