@@ -12,6 +12,10 @@ hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 gray=cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 cv2.imshow('grayscale',gray)
 
+#kernel1 = np.ones((5,5),np.uint8)
+#kernel2 = np.ones((3,3),np.uint8)
+#kernel = np.ones((25,25),np.uint8)
+
 #kernel = np.ones((26,26),np.uint8) #taking circle of radius 13
 kernel=cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(26,26)) #taking ellipse of size 26
 kernel1 = cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(5,5))	
