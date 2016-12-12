@@ -4,8 +4,8 @@ import numpy as np
 import cv2
 import Image
 
-img = Image.open('image032.png')
-img.save('image032.jpg') 
+img = Image.open('image002.png')
+img.save('image002.jpg') 
 # construct the argument parse and parse the arguments
 #ap = argparse.ArgumentParser()
 #ap.add_argument("-i", "--image", help = "path to the image file")
@@ -15,7 +15,7 @@ img.save('image032.jpg')
  
 # load the image and convert it to grayscale
 
-image = cv2.imread('image032.jpg',1)
+image = cv2.imread('image002.jpg',1)
 height,width,depth = image.shape
 orig = image.copy()
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)

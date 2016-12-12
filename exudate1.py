@@ -4,7 +4,7 @@ import Image
 
 #img = Image.open('image032.png')
 #img.save('image032.jpg')
-img = cv2.imread('image032.jpg',1)
+img = cv2.imread('image002.jpg',1)
 cv2.imshow('initial',img)
 bv002=cv2.imread('bv018.jpg',1)
 optic002=cv2.imread('opticdisk018.jpg',1)
