@@ -1,9 +1,12 @@
 # optic disk
 import cv2
 import numpy as np
+import Image
 
+img = Image.open('image013.png')
+img.save('image013.jpg') 
 
-res = cv2.imread('17_right.jpeg',1)
+res = cv2.imread('image013.jpg',1)
 img = cv2.resize(res,None,fx=0.25, fy=0.25, interpolation = cv2.INTER_CUBIC)
 #cv2.imshow('image',img)
 # Convert BGR to HSV
